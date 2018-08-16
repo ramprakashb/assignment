@@ -1,6 +1,6 @@
 # Guessinggame Project
 
-date={%a, %b %d, %y}
+date='r format(Sys.Date(), %B %e %Y)'
 
 number of lines=$(wc -l ~/assignment/guessinggame.sh)
 
