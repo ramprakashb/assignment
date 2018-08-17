@@ -1,4 +1,4 @@
-#assignment file
+#assignmenwqt file
 
 file_no=$( ls | wc -l )
 echo $file_no
@@ -17,6 +17,13 @@ function equal {
 }
 function notequal {
 	echo "value is not equal"
+	if [[ $val -lt $file_no ]]
+	then
+		echo "value is less than the number of files"
+	elif [[ $val -gt $file_no ]]
+	then
+		echo "value is greated than the number of files"
+	fi
 	check
 }
 check
